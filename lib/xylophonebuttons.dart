@@ -2,16 +2,18 @@ import 'package:flutter/material.dart';
 
 class XyloPhoneButtons extends StatelessWidget {
   const XyloPhoneButtons({
-    super.key,
+    super.key, required this.buttonColor,
   });
+
+  final Color buttonColor;
 
   @override
   Widget build(BuildContext context) {
     return TextButton(
       onPressed: () {},
       style: TextButton.styleFrom(
-        backgroundColor: Colors.orange,
-        fixedSize: Size.fromHeight(60),
+        backgroundColor: buttonColor,
+        fixedSize: Size.fromHeight(80),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(40),
         ),

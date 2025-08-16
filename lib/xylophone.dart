@@ -8,26 +8,31 @@ class Xylophone extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 12),
+          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 40),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              XyloPhoneButtons(),
+              XyloPhoneButtons(buttonColor: Colors.red,),
               SizedBox(height: 5,),
-              TextButton(
-                onPressed: () {},
-                style: TextButton.styleFrom(
-                  backgroundColor: Colors.orange,
-                  fixedSize: Size.fromHeight(60),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(40),
-                  ),
-                ),
-                child: Text(''),
-              ),
+              XyloPhoneButtons(buttonColor: Colors.orange,),
+              SizedBox(height: 5,),
+              XyloPhoneButtons(buttonColor: Colors.yellow,),
+              SizedBox(height: 5,),
+              XyloPhoneButtons(buttonColor: Colors.green,),
+              SizedBox(height: 5,),
+              XyloPhoneButtons(buttonColor: Colors.lightBlue.shade400,),
+              SizedBox(height: 5,),
+              XyloPhoneButtons(buttonColor: Colors.blue.shade700),
+              SizedBox(height: 5,),
+              XyloPhoneButtons(buttonColor: Colors.purple,),
+              SizedBox(height: 5,),
+              XyloPhoneButtons(buttonColor: Colors.pink,),
+
+
+
+
             ],
           ),
         ),
