@@ -5,6 +5,19 @@ class Xylophone extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(),
+      body: SafeArea(
+        child: Column(
+          children: [
+            TextButton(
+              onPressed: () {},
+              style: TextButton.styleFrom(backgroundColor: Colors.orange),
+              child: Text(''),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }
