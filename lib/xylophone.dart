@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'xylophonebuttons.dart';
 
 class Xylophone extends StatelessWidget {
@@ -29,9 +28,6 @@ class Xylophone extends StatelessWidget {
               XyloPhoneButtons(buttonColor: Colors.purple,),
               SizedBox(height: 5,),
               XyloPhoneButtons(buttonColor: Colors.pink,),
-
-
-
 
             ],
           ),
