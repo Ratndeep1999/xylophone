@@ -1,3 +1,4 @@
+import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'xylophonebuttons.dart';
 
@@ -34,6 +35,10 @@ class Xylophone extends StatelessWidget {
         ),
       ),
     );
+  }
+  Future<void> playSound() async {
+    final player = AudioPlayer();
+    await player.play(UrlSource('https://example.com/my-audio.wav'));
   }
 }
 
