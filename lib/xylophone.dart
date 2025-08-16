@@ -8,14 +8,24 @@ class Xylophone extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(),
       body: SafeArea(
-        child: Column(
-          children: [
-            TextButton(
-              onPressed: () {},
-              style: TextButton.styleFrom(backgroundColor: Colors.orange),
-              child: Text(''),
-            ),
-          ],
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 12),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              TextButton(
+                onPressed: () {},
+                style: TextButton.styleFrom(
+                  backgroundColor: Colors.orange,
+                  fixedSize: Size.fromHeight(60),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(40),
+                  ),
+                ),
+                child: Text(''),
+              ),
+            ],
+          ),
         ),
       ),
     );
