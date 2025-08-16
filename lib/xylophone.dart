@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'xylophonebuttons.dart';
+
 class Xylophone extends StatelessWidget {
   const Xylophone({super.key});
 
@@ -13,6 +15,8 @@ class Xylophone extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
+              XyloPhoneButtons(),
+              SizedBox(height: 5,),
               TextButton(
                 onPressed: () {},
                 style: TextButton.styleFrom(
@@ -31,3 +35,5 @@ class Xylophone extends StatelessWidget {
     );
   }
 }
+
+
