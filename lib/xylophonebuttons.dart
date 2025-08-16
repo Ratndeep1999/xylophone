@@ -14,7 +14,7 @@ class XyloPhoneButtons extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextButton(
       onPressed: () {
-
+        playSound();
       },
       style: TextButton.styleFrom(
         backgroundColor: buttonColor,
