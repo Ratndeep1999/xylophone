@@ -75,7 +75,7 @@ class Xylophone extends StatelessWidget {
       ),
     );
   }
-
+  // method to play tunes
   Future<void> playSound(String tune) async {
     final player = AudioPlayer();
     await player.play(AssetSource('audio/$tune.wav'));
