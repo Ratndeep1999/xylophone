@@ -17,7 +17,7 @@ class Xylophone extends StatelessWidget {
               XyloPhoneButtons(
                 buttonColor: Colors.red,
                 playSound: () {
-                  debugPrint('C');
+                  playSound();
                 },
               ),
               SizedBox(height: 5),
@@ -78,6 +78,6 @@ class Xylophone extends StatelessWidget {
 
   Future<void> playSound() async {
     final player = AudioPlayer();
-    await player.play(UrlSource('https://example.com/my-audio.wav'));
+    await player.play(AssetSource('audio/c.wav'));
   }
 }
