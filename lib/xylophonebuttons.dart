@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class XyloPhoneButtons extends StatelessWidget {
@@ -18,7 +19,7 @@ class XyloPhoneButtons extends StatelessWidget {
       },
       style: TextButton.styleFrom(
         backgroundColor: buttonColor,
-        fixedSize: Size.fromHeight(80),
+        fixedSize: kIsWeb ? Size.fromHeight(64) : Size.fromHeight(64),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(40)),
       ),
       child: Text(''),
