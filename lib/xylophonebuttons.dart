@@ -19,7 +19,7 @@ class XyloPhoneButtons extends StatelessWidget {
       },
       style: TextButton.styleFrom(
         backgroundColor: buttonColor,
-        fixedSize: kIsWeb ? Size.fromHeight(64) : Size.fromHeight(64),
+        fixedSize: kIsWeb ? Size.fromHeight(64) : Size.fromHeight(80),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(40)),
       ),
       child: Text(''),
